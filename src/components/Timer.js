@@ -46,11 +46,7 @@ function Timer() {
         minutes = "" + minutes;
         hours = "" + hours;
         setTimer(
-          `${hours.padStart(2, 0)}:${minutes.padStart(2, 0)}:${seconds.padStart(
-            2,
-            0
-          )}`
-        );
+          `${hours.padStart(2,0)}:${minutes.padStart(2,0)}:${seconds.padStart(2, 0)}`);
       }, 1000);
     } else if (!isTimerOn && !wait) {
       setTimer("00:00:00");
